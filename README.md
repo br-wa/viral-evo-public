@@ -9,7 +9,7 @@ R: The following libraries: <code>ggmuller, ggplot2</code>
 
 # Basic usage
 
-Set up the following subdirectories: <code>mullerplots</code>, <code>phaseplot</code>, <code>temp/disease</code>, <code>temp/region<code>
+Set up the following subdirectories: <code>mullerplots</code>, <code>phaseplot</code>, <code>temp/disease</code>, <code>temp/region</code>
 Compile with <code>make</code>
 Create data files with the format specified below (you can also do this by running <code>python3 newsetup.py</code>)
 Run <code>./sir REGION_NAME DAYS_TO_SIMULATE DISEASE1 DISEASE2 ... </code>, e.g. <code>./sir uk 400 covid_orig covid_b117</code> to produce output in raw CSV format (pipe with <code> > output.csv</code> for optimal use)
