@@ -16,13 +16,13 @@ Code for SIR modeling of viruses and related scipts
   <li> Compile with <code>make</code> </li>
   <li> Create data files with the format specified below (you can also do this by running <code>python3 newsetup.py</code>) </li>
   <li> Run <code>./sir REGION_NAME DAYS_TO_SIMULATE DISEASE1 DISEASE2 ... </code>, e.g. <code>./sir uk 400 covid_orig covid_b117</code> to produce output in raw CSV format (pipe with <code> > output.csv</code> for optimal use) </li>
-<ol>
+</ol>
 
 # Auxiliary code and visualizations
 
 #### Muller plots:
 
-After running <code>.sir</code> <b>and piping output to output.csv</code>, run <code>python3 mullerplot.py "title of graph" DISEASE1 DISEASE2</code>. This will output to a file in the <code>mullerplots</code> directory.
+After running <code>.sir</code> <b>and piping output to <code>output.csv</code></b>, run <code>python3 mullerplot.py "title of graph" DISEASE1 DISEASE2</code>. This will output to a file in the <code>mullerplots</code> directory.
 
 #### Phase diagrams:
 
