@@ -26,7 +26,7 @@ After running <code>.sir</code> <b>and piping output to <code>output.csv</code><
 
 #### Phase diagrams:
 
-Run <code>python3 phase.py</code> with the appropriate parameters. Note that <b>many features, including simulation length and the fact that there are only two viruses</code> are hard-coded. Edit the file at your own risk.</b>
+Run <code>python3 phase.py</code> with the appropriate parameters. Note that <b>as written,  you must have a virus called "control" and one called "variable" (with specified sicklength, appearance, howmany parameters</b>. Furthermore, <b>many features, including simulation length and the fact that there are only two viruses</code> are hard-coded. Edit the file at your own risk</b>.
 
 # Data formats
 
