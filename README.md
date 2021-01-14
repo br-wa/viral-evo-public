@@ -3,16 +3,20 @@ Code for SIR modeling of viruses and related scipts
 
 # Dependencies 
 
-C++: C++17, edit Makefile to use with C++11 or older versions
-Python: The following packages <code>numpy, pandas, pathlib, decimal, matplotlib.pyplot, math</code>
-R: The following libraries: <code>ggmuller, ggplot2</code>
+<ul>
+  <li> C++: C++17, edit Makefile to use with C++11 or older versions </li>
+  <li> Python: The following packages <code>numpy, pandas, pathlib, decimal, matplotlib.pyplot, math</code> </li>
+  <li> R: The following libraries: <code>ggmuller, ggplot2</code> </li>
+</ul>
 
 # Basic usage
 
-Set up the following subdirectories: <code>mullerplots</code>, <code>phaseplot</code>, <code>temp/disease</code>, <code>temp/region</code>
-Compile with <code>make</code>
-Create data files with the format specified below (you can also do this by running <code>python3 newsetup.py</code>)
-Run <code>./sir REGION_NAME DAYS_TO_SIMULATE DISEASE1 DISEASE2 ... </code>, e.g. <code>./sir uk 400 covid_orig covid_b117</code> to produce output in raw CSV format (pipe with <code> > output.csv</code> for optimal use)
+<ol>
+  <li> Set up the following subdirectories: <code>mullerplots</code>, <code>phaseplot</code>, <code>temp/disease</code>, <code>temp/region</code> </li>
+  <li> Compile with <code>make</code> </li>
+  <li> Create data files with the format specified below (you can also do this by running <code>python3 newsetup.py</code>) </li>
+  <li> Run <code>./sir REGION_NAME DAYS_TO_SIMULATE DISEASE1 DISEASE2 ... </code>, e.g. <code>./sir uk 400 covid_orig covid_b117</code> to produce output in raw CSV format (pipe with <code> > output.csv</code> for optimal use) </li>
+<ol>
 
 # Auxiliary code and visualizations
 
@@ -22,7 +26,7 @@ After running <code>.sir</code> <b>and piping output to output.csv</code>, run <
 
 #### Phase diagrams:
 
-Run <code>python3 phase.py</code> with the appropriate parameters. Note that <b>many features, including simulation length and the fact that there are only two viruses</code> are hard-coded. Edit the file at your own risk.
+Run <code>python3 phase.py</code> with the appropriate parameters. Note that <b>many features, including simulation length and the fact that there are only two viruses</code> are hard-coded. Edit the file at your own risk.</b>
 
 # Data formats
 
