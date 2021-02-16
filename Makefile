@@ -1,4 +1,4 @@
-CXXFLAGS = -std=gnu++17 -Wall -O2
+CXXFLAGS = -std=gnu++11 -Wall -O2
 CXXDEBUGFLAGS = -DEBUG
 
 CXX = g++
