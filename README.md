@@ -14,7 +14,7 @@ Code for SIR modeling of viruses and related scipts
 
 #### Muller plots:
 
-After running <code>.sir</code> <b>and piping output to <code>output.csv</code></b>, run <code>python3 mullerplot.py "title of graph" DISEASE1 DISEASE2</code>. This will output to a file in the <code>mullerplots</code> directory.
+After running <code>./sir</code> <b>and piping output to <code>output.csv</code></b>, run <code>python3 mullerplot.py "title of graph" DISEASE1 DISEASE2</code>. This will output to a file in the <code>mullerplots</code> directory.
 
 #### Phase diagrams:
 
