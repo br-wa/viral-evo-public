@@ -52,7 +52,7 @@ virulence = increase in deathrate for infected population, sicklength = average 
 The output of <code>./sir</code> is in a <code>csv</code> format, with the following four global columns:
 <ul>
   <li> <code>date</code>, the number of days since the start of the pandemic.</li>
-  <li> <code>total infected</code>, the total number of people infected <b>at that point in time.</li>
+  <li> <code>total infected</code>, the total number of people infected <b>at that point in time</b>.</li>
   <li> <code>total daily infections</code>, the number of people who were first infected <b>on that date</b>.</li>
   <li> <code>total recovered</code>, the cumulative number of people who have recovered from any of the diseases. </li>
 </ul>
