@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]) {
 	if(argc < 2) {
 		cerr << "simtype days country disease1 disease2 ... diseasen" << endl;
-		cerr << "e.g. si_naive 500 usa h1n1" << endl;
+		cerr << "e.g. sir 500 usa h1n1" << endl;
 		cerr << "reads constantfile, output to std output" << endl;
 		return 1;
 	}	
