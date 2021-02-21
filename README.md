@@ -18,7 +18,9 @@ After running <code>./sir</code> <b>and piping output to <code>output.csv</code>
 
 #### Phase diagrams:
 
-Run <code>python3 phase.py</code> with the appropriate parameters. Note that <b>as written,  you must have a virus called "control" and one called "variable" (with specified sicklength, appearance, howmany parameters)</b>. Furthermore, <b>many features, including simulation length and the fact that there are only two viruses</code> are hard-coded. Edit the file at your own risk</b>.
+Run <code>python3 phase.py</code> with the appropriate parameters. Note that <b>as written,  you must have a virus called "control" and one called "variable" (with specified sicklength, appearance, howmany parameters)</b>. Furthermore, <b>many features, including simulation length and the fact that there are only two viruses</code> are hard-coded. Edit the file at your own risk</b>. 
+
+Similarly <code>phasemult.py</code> adapts <code>phase.py</code> to run with more than two viruses. However, its visualizations are not as useful due to them still being two-colored.
 
 # Data formats
 
@@ -44,3 +46,20 @@ appearance 0
 howmany 1000
 ```
 virulence = increase in deathrate for infected population, sicklength = average length of infection, infectivity = P(X infects Y on day N) for any infected X, noninfected Y, and Day N, appearance = time disease appears (do <i>not</i> set this to be < 0), howmany = number of people infected when it appears
+
+#### Output:
+
+The output of <code>./sir</code> is in a <code>csv</code> format, with the following four global columns:
+<ul>
+  <li> <code>date</code>, the number of days since the start of the pandemic.</li>
+  <li> <code>total infected</code>, the total number of people infected <b>at that point in time.</li>
+  <li> <code>total daily infections</code>, the number of people who were first infected <b>on that date</b>.</li>
+  <li> <code>total recovered</code>, the cumulative number of people who have recovered from any of the diseases. </li>
+</ul>
+Furthermore, for each disease with name <code>[disease name]</code> we have the following three columns:
+<ul>
+  <li> <code>daily [disease name] infected</code>, the number of people who were first infected by the given disease on the specified date.</li>
+  <li> <code>total [disease name] infected</code>, the total number of people infected by the given disease <b>at that point in time</b>.</li>
+  <li> <code>[disease name] recovered</code>, the total number of people who recovered from the given disease.</li>
+</ul>
+Note that there is no label for total number of people who were ever infected. The number of recovered, however, is a good approximation for diseases with low virulence.
